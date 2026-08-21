@@ -12,6 +12,7 @@ import "./portal.css";
 import "./inquiry.css";
 import "./concept.css";
 import "./demo-lab.css";
+import "./three.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://allen-web-studio.avongs97.chatgpt.site"),
