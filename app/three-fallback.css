@@ -1,0 +1,2 @@
+.threeHero.isFallback{display:grid;place-items:center}
+.threeHero.isFallback .threeFallback{display:block;font:900 clamp(260px,42vw,700px)/1 Arial;color:#071217;-webkit-text-stroke:2px #00e7ff;transform:perspective(900px) rotateY(-18deg) rotateX(7deg);text-shadow:20px 18px 0 #ff4d00,0 0 80px #00e7ff55;opacity:.48}

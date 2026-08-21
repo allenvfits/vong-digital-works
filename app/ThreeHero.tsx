@@ -9,11 +9,16 @@ export default function ThreeHero() {
   useEffect(() => {
     const element = host.current;
     if (!element || !window.WebGLRenderingContext) return;
+    const probe = document.createElement("canvas");
+    const context = probe.getContext("webgl2") || probe.getContext("webgl");
+    if (!context) { element.classList.add("isFallback"); return; }
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(48, 1, .1, 100);
     camera.position.set(0, .1, 8.6);
-    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: !reduced, powerPreference: "high-performance" });
+    let renderer: THREE.WebGLRenderer;
+    try { renderer = new THREE.WebGLRenderer({ alpha: true, antialias: !reduced, powerPreference: "high-performance" }); }
+    catch { element.classList.add("isFallback"); return; }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
     renderer.setClearColor(0x000000, 0);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
