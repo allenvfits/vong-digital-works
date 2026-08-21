@@ -2,7 +2,7 @@ services:
   - type: web
     name: vong-digital-works
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm ci && npm run build:render
     startCommand: npm run start:render
     healthCheckPath: /
