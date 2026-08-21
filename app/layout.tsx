@@ -8,6 +8,7 @@ import "./apex.css";
 import "./lex.css";
 import "./range.css";
 import "./reel.css";
+import "./portal.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://allen-web-studio.avongs97.chatgpt.site"),
