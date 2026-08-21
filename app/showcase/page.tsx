@@ -1,0 +1,5 @@
+import DemoGallery from "./DemoGallery";
+
+export const metadata = { title: "Interactive Work | Vong Digital Works", description: "Explore full-stack website concepts built by Vong Digital Works.", openGraph: { images: [] }, twitter: { images: [] } };
+
+export default function Showcase() { return <main className="showcasePage"><nav className="nav shell"><a className="brand" href="/"><span>V</span> VONG / DIGITAL WORKS</a><a className="navCta" href="/#contact">Start a project ↗</a></nav><section className="showcaseHero shell"><p className="kicker">Interactive portfolio</p><h1>Don&apos;t just look.<br/><em>Explore the work.</em></h1><p>These working concepts show how I think about product design, frontend interaction, and business-focused systems. Your actual client projects can be added here with live links, videos, and case studies.</p></section><section className="shell showcaseContent"><DemoGallery/></section><section className="showcaseCta"><div className="shell"><p>Like what you see?</p><h2>Let&apos;s make your idea<br/>the next case study.</h2><a className="button darkButton" href="/#contact">Start a project ↗</a></div></section></main> }
