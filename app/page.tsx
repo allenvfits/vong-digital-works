@@ -10,7 +10,7 @@ export default function Home() {
   return <main>
     <nav className="nav shell" aria-label="Primary navigation">
       <a className="brand" href="#top" aria-label="Vong Digital Works home"><span>V</span> VONG / DIGITAL WORKS</a>
-      <div className="navLinks"><a href="/showcase">Explore work</a><a href="#services">Services</a><a href="#process">Process</a></div>
+      <div className="navLinks"><a href="/showcase">Explore work</a><a href="#services">Services</a><a href="#process">Process</a><a href="/login">Client login</a></div>
       <a className="navCta" href="#contact">Start a project <span>↗</span></a>
     </nav>
 
@@ -53,6 +53,6 @@ export default function Home() {
     <section className="contact" id="contact"><div className="shell contactGrid"><div><p className="kicker">Start a conversation</p><h2>Have an idea?<br/><em>Let&apos;s build it.</em></h2><p className="contactLead">Tell me what you&apos;re working on, even if it&apos;s still just an idea. I&apos;ll help you figure out the best next step.</p><div className="contactMethods"><span>Email and phone details can be added here when ready.</span></div></div>
       <InquiryForm />
     </div></section>
-    <footer className="footer"><div className="shell"><a className="brand" href="#top"><span>V</span> VONG / DIGITAL WORKS</a><p>Custom websites. Complete builds. Real collaboration.</p><div><a href="/dashboard">Business dashboard</a> · <a href="#top">Back to top ↑</a></div></div></footer>
+    <footer className="footer"><div className="shell"><a className="brand" href="#top"><span>V</span> VONG / DIGITAL WORKS</a><p>Custom websites. Complete builds. Real collaboration.</p><div><a href="/login">Client login</a> · <a href="/dashboard">Business dashboard</a> · <a href="#top">Back to top ↑</a></div></div></footer>
   </main>;
 }
