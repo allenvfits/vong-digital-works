@@ -1,4 +1,5 @@
 import InquiryForm from "./InquiryForm";
+import ThreeHero from "./ThreeHero";
 
 const services = [
   { number: "01", title: "Custom websites", text: "Purpose-built websites shaped around your brand, audience, and business goals—not squeezed into a template." },
@@ -15,6 +16,7 @@ export default function Home() {
     </nav>
 
     <section className="impactHero" id="top">
+      <ThreeHero />
       <div className="shell impactIntro"><div><div className="heroEyebrow"><i /> Independent full-stack web studio</div><h1>I build websites<br/>people <em>remember.</em></h1></div><div className="impactPitch"><p>Custom design on the surface. Powerful systems underneath. Every project is built to stand out and move your business forward.</p><div className="heroActions"><a className="button primary" href="/showcase">Explore the work <span>↗</span></a><a className="textLink" href="#contact">Start a project</a></div></div></div>
       <div className="heroReel" aria-label="Featured website concept previews">
         <a className="reelCard reelEstate" href="/demo/real-estate"><img src="/concept-estate.png" alt="Luxury real estate website concept"/><div className="reelChrome"><i/><i/><i/><span>vanta.properties</span></div><div className="reelCopy"><small>01 / REAL ESTATE</small><b>RARE SPACE.<br/>EXACTLY PLACED.</b><span>EXPLORE CONCEPT ↗</span></div></a>
