@@ -1,0 +1,5 @@
+.inquiryTrap{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.inquiry button:disabled{cursor:wait;opacity:.7}
+.inquiryStatus{margin:0;font-size:13px;line-height:1.5}
+.inquiryStatus.success{color:#74e8c0}
+.inquiryStatus.error{color:#ff8c8c}

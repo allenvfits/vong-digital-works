@@ -1,3 +1,5 @@
+import InquiryForm from "./InquiryForm";
+
 const services = [
   { number: "01", title: "Custom websites", text: "Purpose-built websites shaped around your brand, audience, and business goals—not squeezed into a template." },
   { number: "02", title: "Frontend development", text: "Fast, responsive interfaces with thoughtful motion, clear content, and a polished experience on every screen." },
@@ -49,7 +51,7 @@ export default function Home() {
     </section>
 
     <section className="contact" id="contact"><div className="shell contactGrid"><div><p className="kicker">Start a conversation</p><h2>Have an idea?<br/><em>Let&apos;s build it.</em></h2><p className="contactLead">Tell me what you&apos;re working on, even if it&apos;s still just an idea. I&apos;ll help you figure out the best next step.</p><div className="contactMethods"><span>Email and phone details can be added here when ready.</span></div></div>
-      <form className="inquiry" action="mailto:" method="post" encType="text/plain"><label>Name<input name="name" placeholder="Your name" required/></label><label>Email<input type="email" name="email" placeholder="you@company.com" required/></label><label>What do you need?<select name="service" defaultValue=""><option value="" disabled>Select a service</option><option>Custom business website</option><option>Full-stack web application</option><option>Website redesign</option><option>Not sure yet</option></select></label><label>Tell me about the project<textarea name="project" placeholder="Goals, features, timeline, budget..." rows={4} required/></label><button className="button primary" type="submit">Send project inquiry <span>↗</span></button><small>Add your business email to activate direct inquiries.</small></form>
+      <InquiryForm />
     </div></section>
     <footer className="footer"><div className="shell"><a className="brand" href="#top"><span>V</span> VONG / DIGITAL WORKS</a><p>Custom websites. Complete builds. Real collaboration.</p><div><a href="/dashboard">Business dashboard</a> · <a href="#top">Back to top ↑</a></div></div></footer>
   </main>;
