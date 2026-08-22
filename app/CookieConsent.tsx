@@ -65,20 +65,17 @@ export default function CookieConsent() {
         >
           <div>
             <p>YOUR PRIVACY</p>
-            <h2 id="cookie-consent-title">Choose your cookie preference</h2>
+            <h2 id="cookie-consent-title">Cookies & analytics</h2>
             <span>
-              We use necessary storage to remember your choice. With your
-              permission, Google Analytics also helps us understand visits,
-              page activity, devices, and approximate location. We do not load
-              Analytics unless you approve.
+              Allow optional Google Analytics to help us improve this website?
             </span>
           </div>
           <div className="cookieActions">
             <button className="cookieAccept" onClick={() => save("granted")}>
-              Accept analytics
+              Accept
             </button>
             <button className="cookieReject" onClick={() => save("denied")}>
-              Reject optional cookies
+              Reject
             </button>
           </div>
         </section>
