@@ -11,6 +11,7 @@ import "./reel.css";
 import "./portal.css";
 import "./inquiry.css";
 import "./concept.css";
+import "./professional.css";
 import "./demo-lab.css";
 import "./three.css";
 import "./three-fallback.css";

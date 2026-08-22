@@ -2,9 +2,9 @@ import InquiryForm from "./InquiryForm";
 import ThreeHero from "./ThreeHero";
 
 const services = [
-  { number: "01", title: "Custom websites", text: "Purpose-built websites shaped around your brand, audience, and business goals—not squeezed into a template." },
-  { number: "02", title: "Frontend development", text: "Fast, responsive interfaces with thoughtful motion, clear content, and a polished experience on every screen." },
-  { number: "03", title: "Backend systems", text: "Secure databases, dashboards, authentication, APIs, payments, and the behind-the-scenes tools your business needs." },
+  { number: "01", title: "Custom websites", text: "Purpose-built websites shaped around your brand, audience, and business goals—not squeezed into a template.", href:"/services#custom-websites" },
+  { number: "02", title: "Frontend development", text: "Fast, responsive interfaces with thoughtful motion, clear content, and a polished experience on every screen.", href:"/services#frontend-development" },
+  { number: "03", title: "Backend systems", text: "Secure databases, dashboards, authentication, APIs, payments, and the behind-the-scenes tools your business needs.", href:"/services#backend-systems" },
 ];
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
     <section className="statement"><div className="shell statementGrid"><p className="kicker">What I do</p><h2>More than a good-looking website. I build complete digital experiences that <em>work hard</em> for your business.</h2></div></section>
 
     <section className="services" id="services"><div className="shell"><div className="sectionHead light"><div><p className="kicker">Capabilities</p><h2>From first sketch<br/>to full-stack launch.</h2></div><p className="sideCopy">One collaborative partner for strategy, design, development, and the technical systems behind it all.</p></div>
-      <div className="serviceList">{services.map(service => <article key={service.number}><span>{service.number}</span><h3>{service.title}</h3><p>{service.text}</p><b>↗</b></article>)}</div>
+      <div className="serviceList">{services.map(service => <a href={service.href} key={service.number}><span>{service.number}</span><h3>{service.title}</h3><p>{service.text}</p><b>LEARN MORE ↗</b></a>)}</div>
     </div></section>
 
     <section className="section process shell" id="process"><p className="kicker">How we work together</p><div className="processIntro"><h2>Clear communication.<br/>No mystery.</h2><p>You stay involved from beginning to end. I explain the decisions, share progress often, and build around what your business actually needs.</p></div>
