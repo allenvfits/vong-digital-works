@@ -1,0 +1,1 @@
+export default function PaymentCancelled() { return <main className="paymentResult"><article><small>PAYMENT NOT COMPLETED</small><h1>No charge was made.</h1><p>You can return to your private portal and try again whenever you are ready.</p><div><a href="/portal">Return to invoice</a><a href="mailto:contact@vongdigitalworks.com">Contact support</a></div></article></main>; }
