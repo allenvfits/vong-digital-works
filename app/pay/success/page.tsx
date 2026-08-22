@@ -1,0 +1,1 @@
+export default function PaymentSuccess() { return <main className="paymentResult"><article><small>PAYMENT RECEIVED</small><h1>Thank you.</h1><p>Your secure Stripe payment was completed. Your invoice will update automatically once Stripe confirms the transaction.</p><div><a href="/portal">Return to client portal</a><a href="/">Vong Digital Works</a></div></article></main>; }
