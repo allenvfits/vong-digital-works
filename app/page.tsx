@@ -11,7 +11,7 @@ export default function Home() {
   return <main>
     <nav className="nav shell" aria-label="Primary navigation">
       <a className="brand" href="#top" aria-label="Vong Digital Works home"><span>V</span> VONG / DIGITAL WORKS</a>
-      <div className="navLinks"><a href="/showcase">Explore work</a><a href="#services">Services</a><a href="#process">Process</a><a href="/login">Client login</a></div>
+      <div className="navLinks"><a href="/showcase">Explore work</a><a href="#services">Services</a><a href="#process">Process</a><a href="/pricing">Pricing</a><a href="/login">Client login</a></div>
       <a className="navCta" href="#contact">Start a project <span>↗</span></a>
     </nav>
 
