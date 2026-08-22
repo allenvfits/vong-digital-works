@@ -20,13 +20,35 @@ import "./oauth.css";
 import "./payment.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://allen-web-studio.avongs97.chatgpt.site"),
+  metadataBase: new URL("https://vongdigitalworks.com"),
   title: "Vong Digital Works | Advanced Full-Stack Engineering",
-  description: "Vong Digital Works creates custom full-stack websites, from strategy and frontend design to powerful backend systems.",
-  openGraph: { title: "Vong Digital Works", description: "Advanced full-stack engineering for brands that refuse to look ordinary.", type: "website", images: [{ url: "/og.png", width: 1732, height: 909, alt: "Vong Digital Works" }] },
-  twitter: { card: "summary_large_image", title: "Vong Digital Works", description: "Advanced full-stack engineering for brands that refuse to look ordinary.", images: ["/og.png"] },
+  description:
+    "Vong Digital Works creates custom full-stack websites, from strategy and frontend design to powerful backend systems.",
+  openGraph: {
+    title: "Vong Digital Works",
+    description:
+      "Advanced full-stack engineering for brands that refuse to look ordinary.",
+    type: "website",
+    images: [
+      { url: "/og.png", width: 1732, height: 909, alt: "Vong Digital Works" },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vong Digital Works",
+    description:
+      "Advanced full-stack engineering for brands that refuse to look ordinary.",
+    images: ["/og.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }
