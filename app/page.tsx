@@ -14,6 +14,9 @@ export default function Home() {
       <div className="navLinks"><a href="/showcase">Explore work</a><a href="#services">Services</a><a href="#process">Process</a><a href="/pricing">Pricing</a><a href="/login">Client login</a></div>
       <a className="navCta" href="#contact">Start a project <span>↗</span></a>
     </nav>
+    <nav className="mobileNav" aria-label="Mobile navigation">
+      <a href="/showcase">Work</a><a href="#services">Services</a><a href="/pricing">Pricing</a><a href="/login">Login</a><a href="#contact">Contact</a>
+    </nav>
 
     <section className="impactHero" id="top">
       <ThreeHero />
@@ -48,9 +51,9 @@ export default function Home() {
       <div className="steps"><div><span>01</span><h3>Discover</h3><p>We define your goals, users, features, timeline, and what success looks like.</p></div><div><span>02</span><h3>Design</h3><p>I shape the structure and visual direction, then refine it with your feedback.</p></div><div><span>03</span><h3>Build</h3><p>I develop the frontend and backend, test the experience, and keep you updated.</p></div><div><span>04</span><h3>Launch</h3><p>We go live confidently, with support for the next stage of growth.</p></div></div>
     </section>
 
-    <section className="contact" id="contact"><div className="shell contactGrid"><div><p className="kicker">Start a conversation</p><h2>Have an idea?<br/><em>Let&apos;s build it.</em></h2><p className="contactLead">Tell me what you&apos;re working on, even if it&apos;s still just an idea. I&apos;ll help you figure out the best next step.</p><div className="contactMethods"><span>Email and phone details can be added here when ready.</span></div></div>
+    <section className="contact" id="contact"><div className="shell contactGrid"><div><p className="kicker">Start a conversation</p><h2>Have an idea?<br/><em>Let&apos;s build it.</em></h2><p className="contactLead">Tell me what you&apos;re working on, even if it&apos;s still just an idea. I&apos;ll help you figure out the best next step.</p><div className="contactMethods"><span>Email me directly</span><a href="mailto:contact@vongdigitalworks.com">contact@vongdigitalworks.com ↗</a></div></div>
       <InquiryForm />
     </div></section>
-    <footer className="footer"><div className="shell"><a className="brand" href="#top"><span>V</span> VONG / DIGITAL WORKS</a><p>Custom websites. Complete builds. Real collaboration.</p><div><a href="/login">Client login</a> · <a href="/dashboard">Business dashboard</a> · <a href="#top">Back to top ↑</a></div></div></footer>
+    <footer className="footer"><div className="shell"><a className="brand" href="#top"><span>V</span> VONG / DIGITAL WORKS</a><a className="footerEmail" href="mailto:contact@vongdigitalworks.com">contact@vongdigitalworks.com</a><div><a href="/showcase">Work</a> · <a href="/pricing">Pricing</a> · <a href="/login">Client login</a> · <a href="#top">Back to top ↑</a></div></div></footer>
   </main>;
 }
