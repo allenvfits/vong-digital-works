@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: "Vong Digital Works | Advanced Full-Stack Engineering",
   description:
     "Vong Digital Works creates custom full-stack websites, from strategy and frontend design to powerful backend systems.",
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "Vong Digital Works",
     description:
