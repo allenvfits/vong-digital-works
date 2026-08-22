@@ -16,7 +16,10 @@ export async function POST(request: Request) {
   if (["paid", "void"].includes(invoice.status)) return Response.json({ error: "This invoice cannot be paid" }, { status: 400 });
   if (!Number.isInteger(invoice.total_cents) || invoice.total_cents <= 0) return Response.json({ error: "This invoice has no payable balance" }, { status: 400 });
 
-  const origin = new URL(request.url).origin;
+  const configuredOrigin = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");
+  const forwardedHost = request.headers.get("x-forwarded-host");
+  const forwardedProtocol = request.headers.get("x-forwarded-proto") || "https";
+  const origin = configuredOrigin || (forwardedHost ? `${forwardedProtocol}://${forwardedHost}` : new URL(request.url).origin);
   const params = new URLSearchParams({
     mode: "payment",
     success_url: `${origin}/pay/success?invoice=${encodeURIComponent(invoice.invoice_number)}`,
