@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import CookieConsent from "./CookieConsent";
 import "./globals.css";
 import "./enhanced.css";
 import "./login.css";
@@ -19,6 +19,7 @@ import "./three-fallback.css";
 import "./pricing.css";
 import "./oauth.css";
 import "./payment.css";
+import "./cookie-consent.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vongdigitalworks.com"),
@@ -56,16 +57,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-6SKQ931YE8"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-6SKQ931YE8');`}
-        </Script>
+        <CookieConsent />
       </body>
     </html>
   );
