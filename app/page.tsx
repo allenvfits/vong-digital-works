@@ -111,25 +111,30 @@ export default function Home() {
               <span>EXPLORE CONCEPT ↗</span>
             </div>
           </a>
-          <a className="reelCard reelFitness" href="/demo/fitness">
+          <a
+            className="reelCard reelFitness"
+            href="https://bamfit.onrender.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
-              src="/concept-fitness.png"
-              alt="Fitness coaching platform concept"
+              src="/bamfit-atlas-hero.webp"
+              alt="BAMFIT Atlas fitness coaching platform"
             />
             <div className="reelChrome">
               <i />
               <i />
               <i />
-              <span>forge.system</span>
+              <span>bamfit.onrender.com</span>
             </div>
             <div className="reelCopy">
-              <small>02 / FITNESS PLATFORM</small>
+              <small>02 / LIVE FITNESS PLATFORM</small>
               <b>
-                OUTWORK
+                BAMFIT
                 <br />
-                YESTERDAY.
+                ATLAS.
               </b>
-              <span>VIEW BUILD ↗</span>
+              <span>VIEW LIVE BUILD ↗</span>
             </div>
           </a>
           <a
