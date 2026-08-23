@@ -2,7 +2,7 @@
 
 const projects = [
   { number:"01", sector:"REAL ESTATE", title:"Vanta Properties", image:"/concept-estate.png", href:"/demo/real-estate", summary:"A luxury property experience designed to turn browsing into qualified private-tour requests.", features:["Property collection", "Individual residence details", "Tour inquiry flow"] },
-  { number:"02", sector:"FITNESS", title:"Forge Coaching", image:"/concept-fitness.png", href:"/demo/fitness", summary:"A focused coaching platform that explains programs clearly and moves prospects toward an assessment.", features:["Program discovery", "Coaching methodology", "Assessment flow"] },
+  { number:"02", sector:"FITNESS", title:"BAMFIT Atlas", image:"/bamfit-atlas-hero.webp", href:"https://bamfit.onrender.com", summary:"A live coaching platform combining training, nutrition, bookings, client accounts, and payments in one focused experience.", features:["Client coaching portal", "Nutrition and bookings", "Integrated payments"] },
   { number:"03", sector:"HOSPITALITY", title:"Kodo Open Fire", image:"/concept-restaurant.png", href:"/demo/restaurant", summary:"An editorial restaurant site that builds atmosphere while making menu exploration and reservations easy.", features:["Interactive menu", "Dining story", "Reservation request"] },
   { number:"04", sector:"ECOMMERCE", title:"Vector Audio", image:"/concept-commerce.png", href:"/demo/ecommerce", summary:"A premium product storefront balancing technical specifications, product storytelling, and a working demo bag.", features:["Product collection", "Detailed specifications", "Add-to-bag interaction"] },
 ];
