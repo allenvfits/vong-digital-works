@@ -62,18 +62,13 @@ export async function POST(request: Request) {
     return Response.json({ error: "Invalid request." }, { status: 400 });
   }
   if (clean(input.website, 200)) return Response.json({ ok: true });
-  const name = clean(input.name, 120);
+  const name = clean(input.name, 120) || "Not provided";
   const email = clean(input.email, 254).toLowerCase();
-  const service = clean(input.service, 80);
-  const project = clean(input.project, 5000);
-  if (
-    !name ||
-    !/^\S+@\S+\.\S+$/.test(email) ||
-    !allowedServices.has(service) ||
-    project.length < 10
-  )
+  const service = clean(input.service, 80) || "Not sure yet";
+  const project = clean(input.project, 5000) || "No project details provided.";
+  if (!/^\S+@\S+\.\S+$/.test(email) || !allowedServices.has(service))
     return Response.json(
-      { error: "Please complete every field with valid information." },
+      { error: "Please enter a valid email address." },
       { status: 400 },
     );
   const response = await fetch(`${url}/rest/v1/inquiries`, {
