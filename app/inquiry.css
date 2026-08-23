@@ -27,6 +27,12 @@
 .inquiry select:invalid {
   color: #aeb7bc;
 }
+.inquiry label > span {
+  color: #82919a;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
 .businessTop {
   background: var(--cyan);
   color: #05080b;
