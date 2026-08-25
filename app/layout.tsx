@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import CookieConsent from "./CookieConsent";
+import LeadChat from "./LeadChat";
 import "./globals.css";
 import "./enhanced.css";
 import "./login.css";
@@ -21,6 +22,7 @@ import "./oauth.css";
 import "./payment.css";
 import "./cookie-consent.css";
 import "./brand-logo.css";
+import "./lead-chat.css";
 
 const siteUrl = "https://vongdigitalworks.com";
 
@@ -125,6 +127,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         {children}
+        <LeadChat />
         <CookieConsent />
       </body>
     </html>
