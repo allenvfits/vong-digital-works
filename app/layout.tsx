@@ -20,6 +20,7 @@ import "./pricing.css";
 import "./oauth.css";
 import "./payment.css";
 import "./cookie-consent.css";
+import "./brand-logo.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vongdigitalworks.com"),
