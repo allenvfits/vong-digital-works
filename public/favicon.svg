@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Vong Digital Works V logo"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101820"/><stop offset="1" stop-color="#030609"/></linearGradient><linearGradient id="m" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".5" stop-color="#dce8f2"/><stop offset="1" stop-color="#71899c"/></linearGradient><filter id="g"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="512" height="512" rx="92" fill="url(#bg)"/><g fill="none" stroke="url(#m)" stroke-linejoin="miter" filter="url(#g)"><path stroke-width="25" d="M68 92h108l80 180 80-180h108L256 432z"/><path stroke-width="15" d="M115 118h54l87 201 87-201h54L256 405z"/><path stroke-width="10" d="M158 138v79l55 124M354 138v79l-55 124"/><circle cx="158" cy="220" r="13" fill="#071018"/><circle cx="354" cy="220" r="13" fill="#071018"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Vong Digital Works logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101820"/>
+      <stop offset="1" stop-color="#030609"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#e8f1f8"/>
+      <stop offset="1" stop-color="#7890a4"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#metal)" stroke-linecap="square" stroke-linejoin="miter" filter="url(#glow)">
+    <path stroke-width="24" d="M70 96h104l82 178 82-178h104L256 426 70 96Z"/>
+    <path stroke-width="14" d="M116 121h54l86 195 86-195h54L256 398 116 121Z"/>
+    <path stroke-width="10" d="M159 140v76l54 119M353 140v76l-54 119"/>
+    <circle cx="159" cy="218" r="13" fill="#071018"/>
+    <circle cx="353" cy="218" r="13" fill="#071018"/>
+  </g>
+</svg>
