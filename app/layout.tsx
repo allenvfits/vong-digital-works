@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CookieConsent from "./CookieConsent";
 import LeadChat from "./LeadChat";
+import TrustLinks from "./TrustLinks";
 import "./globals.css";
 import "./enhanced.css";
 import "./login.css";
@@ -127,6 +128,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         {children}
+        <TrustLinks />
         <LeadChat />
         <CookieConsent />
       </body>
