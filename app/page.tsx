@@ -443,8 +443,8 @@ export default function Home() {
               <em>Let&apos;s build it.</em>
             </h2>
             <p className="contactLead">
-              Tell me what you&apos;re working on, even if it&apos;s still just
-              an idea. I&apos;ll help you figure out the best next step.
+              Tell me about your project, goals, and timeline. I&apos;ll prepare
+              a custom quote with clear deliverables and pricing for you to review.
             </p>
             <div className="contactMethods">
               <span>Email me directly</span>
