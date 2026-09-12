@@ -42,7 +42,7 @@ export default function Home() {
           <a href="#services">Services</a>
           <a href="#process">Process</a>
           <a href="/pricing">Pricing</a>
-          <a href="/login">Client login</a>
+          <a href="/login">Client login</a><a href="/signup">Create account</a>
         </div>
         <a className="navCta" href="#contact">
           Start a project <span>↗</span>
@@ -466,7 +466,7 @@ export default function Home() {
           </a>
           <div>
             <a href="/showcase">Work</a> · <a href="/pricing">Pricing</a> ·{" "}
-            <a href="/login">Client login</a> · <a href="#top">Back to top ↑</a>
+            <a href="/login">Client login</a><a href="/signup">Create account</a> · <a href="#top">Back to top ↑</a>
           </div>
         </div>
       </footer>

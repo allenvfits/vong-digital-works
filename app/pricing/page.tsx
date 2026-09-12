@@ -71,7 +71,7 @@ export default function PricingPage() {
   return <main className="pricingPage">
     <nav className="nav shell" aria-label="Primary navigation">
       <a className="brand" href="/"><img src="/vong-logo.svg" alt="Vong Digital Works" className="brandLogo" /></a>
-      <div className="navLinks"><a href="/showcase">Explore work</a><a href="/#services">Services</a><a href="/#process">Process</a><a href="/pricing" aria-current="page">Pricing</a><a href="/login">Client login</a></div>
+      <div className="navLinks"><a href="/showcase">Explore work</a><a href="/#services">Services</a><a href="/#process">Process</a><a href="/pricing" aria-current="page">Pricing</a><a href="/login">Client login</a><a href="/signup">Create account</a></div>
       <a className="navCta" href="/#contact">Start a project <span>↗</span></a>
     </nav>
 
@@ -112,6 +112,6 @@ export default function PricingPage() {
     </div></section>
 
     <section className="pricingCta"><div className="shell"><p>STOP BUYING A WEBSITE THAT JUST SITS THERE</p><h2>Build a digital system<br/>that helps run<br/><em>your business.</em></h2><a className="button primary" href="/#contact">Request a quote <span>↗</span></a></div></section>
-    <footer className="footer"><div className="shell"><a className="brand" href="/"><img src="/vong-logo.svg" alt="Vong Digital Works" className="brandLogo" /></a><p>Balance design and technology.</p><div><a href="/login">Client login</a> · <a href="/">Home ↑</a></div></div></footer>
+    <footer className="footer"><div className="shell"><a className="brand" href="/"><img src="/vong-logo.svg" alt="Vong Digital Works" className="brandLogo" /></a><p>Balance design and technology.</p><div><a href="/login">Client login</a><a href="/signup">Create account</a> · <a href="/">Home ↑</a></div></div></footer>
   </main>;
 }

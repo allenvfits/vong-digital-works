@@ -36,6 +36,7 @@ export default function LoginForm() {
     setLoading(true);
     setError("");
     const form = new FormData(event.currentTarget);
+    try {
     const response = await fetch("/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -47,7 +48,8 @@ export default function LoginForm() {
       return;
     }
     setError(data.error || "Sign in failed");
-    setLoading(false);
+    } catch { setError("Unable to connect. Please try again."); }
+    finally { setLoading(false); }
   }
 
   const hasSocial = providers.google || providers.apple;
@@ -65,6 +67,7 @@ export default function LoginForm() {
     <label>Password<input name="password" type="password" required autoComplete="current-password" /></label>
     {error && <p className="loginError">{error}</p>}
     <button className="dashAdd" disabled={loading}>{loading ? "Signing in…" : "Sign in →"}</button>
+    <p>New here? <a href="/signup" style={{textDecoration:"underline"}}>Create an account →</a></p>
     <small>Approved team members enter the business dashboard. Customers enter a private portal containing only their own records.</small>
   </form>;
 }

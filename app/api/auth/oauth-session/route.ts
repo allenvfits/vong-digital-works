@@ -1,3 +1,4 @@
+import { customerDestination } from "@/lib/customer-access";
 export async function POST(request: Request) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -15,16 +16,9 @@ export async function POST(request: Request) {
   const user = await authResponse.json();
   if (!user?.id) return Response.json({ error: "The sign-in session is invalid." }, { status: 401 });
 
-  const privateHeaders = { apikey: serviceKey, Authorization: `Bearer ${serviceKey}` };
-  const [profilesResponse, clientsResponse] = await Promise.all([
-    fetch(`${url}/rest/v1/profiles?id=eq.${encodeURIComponent(user.id)}&select=role`, { headers: privateHeaders, cache: "no-store" }),
-    fetch(`${url}/rest/v1/clients?auth_user_id=eq.${encodeURIComponent(user.id)}&select=id`, { headers: privateHeaders, cache: "no-store" }),
-  ]);
-  const profiles = profilesResponse.ok ? await profilesResponse.json() : [];
-  const clients = clientsResponse.ok ? await clientsResponse.json() : [];
-  const destination = profiles[0] ? "/dashboard" : clients[0] ? "/portal" : null;
-  if (!destination) return Response.json({ error: "This account has not been approved for access." }, { status: 403 });
-
+  let destination: string;
+  try { destination = await customerDestination(user); }
+  catch (error) { return Response.json({error: error instanceof Error ? error.message : "Unable to open your account."}, {status: 503}); }
   const maxAge = Math.min(Math.max(Number(expiresIn) || 3600, 60), 3600);
   return new Response(JSON.stringify({ ok: true, destination }), {
     headers: {

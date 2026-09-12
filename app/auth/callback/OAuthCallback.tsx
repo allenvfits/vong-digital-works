@@ -39,6 +39,6 @@ export default function OAuthCallback() {
 
   return <main className="oauthPage"><section className="oauthCard">
     <a className="brand" href="/"><span>V</span> VONG / DIGITAL WORKS</a>
-    {!error ? <><div className="oauthSpinner" aria-hidden="true" /><p className="kicker">Secure connection</p><h1>Completing sign in…</h1><small>Verifying your approved workspace access.</small></> : <><p className="kicker">Sign-in interrupted</p><h1>We couldn&apos;t sign you in.</h1><p className="loginError">{error}</p><a className="oauthReturn" href="/login">Return to sign in →</a></>}
+    {!error ? <><div className="oauthSpinner" aria-hidden="true" /><p className="kicker">Secure connection</p><h1>Completing sign in…</h1><small>Preparing your private account.</small></> : <><p className="kicker">Sign-in interrupted</p><h1>We couldn&apos;t sign you in.</h1><p className="loginError">{error}</p><a className="oauthReturn" href="/login">Return to sign in →</a></>}
   </section></main>;
 }
